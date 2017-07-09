@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import Page from '../components/Page';
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: purple;
-  font-family: sans-serif;
-`;
 
 export default class About extends Component {
   render() {
