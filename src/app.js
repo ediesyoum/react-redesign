@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import home from './pages/home';
-import about from './pages/about';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import './App.css';
 
 class App extends Component {
   render() {
-    return (
+    return(
       <Router>
         <div>
           <ul>
@@ -18,10 +14,10 @@ class App extends Component {
             <li><Link to="/about">About</Link></li>
           </ul>
 
-          <hr/>
+          <hr />
 
-          <Route exact path="/" component={home}/>
-          <Route path="/about" component={about}/>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
         </div>
       </Router>
     );

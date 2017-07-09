@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Page from '../components/page';
+import Page from '../components/Page';
 
 export default class Home extends Component {
   render() {
     return (
-      <Page title="Fart">
-        <p>This is now the page content!</p>
+      <Page title="Home">
+        <p>There should be some content here</p>
       </Page>
     );
   }

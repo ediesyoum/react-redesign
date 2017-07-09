@@ -24,15 +24,18 @@ const Content = styled.main`
 
 export default class Page extends Component {
   render() {
-    return(
-      <Container>
-        <Header>
-          <Title>{this.props.title}</Title>
-        </Header>
-        <Content>
-          {this.props.children}
-        </Content>
-      </Container>
-    );
-  }
+    return (
+			<div className="body">
+				<Container>
+					<Header>
+						<Title>{this.props.title}</Title>
+					</Header>
+
+					<Content>
+						{this.props.children}
+					</Content>
+				</Container>
+			</div>
+		);
+	}
 }
