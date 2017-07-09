@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Home from './containers/home';
-import About from './containers/about';
+import home from './pages/home';
+import about from './pages/about';
 import {
   BrowserRouter as Router,
   Route,
@@ -20,8 +20,8 @@ class App extends Component {
 
           <hr/>
 
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
+          <Route exact path="/" component={home}/>
+          <Route path="/about" component={about}/>
         </div>
       </Router>
     );
