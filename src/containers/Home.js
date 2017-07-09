@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -8,7 +8,6 @@ const Title = styled.h1`
 `;
 
 export default class Home extends Component {
-  static propTypes = {};
 
   render() {
     return (
