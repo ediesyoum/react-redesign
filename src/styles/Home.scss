@@ -1,0 +1,28 @@
+// all colors in use
+
+$teal: rgba(90, 250, 199, 90);
+$sage: rgba(167, 172, 112, 90);
+$mustard: rgba(226, 180, 86, 90);
+$pink: rgba(255, 202, 202, 90);
+$purple: rgba(92, 53, 109, 90);
+$burgundy: rgba(175, 67, 67, 90);
+
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+.container {
+  background-image: linear-gradient(90deg, #C1BDE7, #CEE3FD 50%, #E8E3E4 80%);
+  border-radius: 50px;
+}
+.rectangle__teal {
+  background: $teal;
+  width: 200px;
+  height: 400px;
+}
+.rectangle__pink {
+  background: $pink;
+  width: 400px;
+  height: 200px;
+}
