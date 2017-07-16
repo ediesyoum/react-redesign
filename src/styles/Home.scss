@@ -1,28 +1,42 @@
-// all colors in use
+// shape colors
 
 $teal: rgba(90, 250, 199, 90);
 $sage: rgba(167, 172, 112, 90);
 $mustard: rgba(226, 180, 86, 90);
-$pink: rgba(255, 202, 202, 90);
+$coral: rgba(255, 202, 202, 90);
 $purple: rgba(92, 53, 109, 90);
 $burgundy: rgba(175, 67, 67, 90);
+$pink: $coral;
 
+// container gradient bg
 
+$lightpurple: rgba(194,191,232,100);
+$lightblue: rgba(210,227,249,100);
+$lightyellow: rgba(232,227,228,100);
+
+.container {
+  background-image: linear-gradient(90deg, $lightpurple, $lightblue 50%, $lightyellow 80%);
+  border-radius: 50px;
+}
+
+// text
 h1 {
   font-size: 2em;
   text-align: center;
 }
-.container {
-  background-image: linear-gradient(90deg, #C1BDE7, #CEE3FD 50%, #E8E3E4 80%);
-  border-radius: 50px;
-}
+
+// shapes
 .rectangle__teal {
   background: $teal;
   width: 200px;
   height: 400px;
+  margin-left: 30%;
+  box-shadow: -0.3em 0 0.6em #bdabab;
 }
 .rectangle__pink {
   background: $pink;
   width: 400px;
   height: 200px;
+  margin-left: 30%;
+  box-shadow: -0.3em 0 0.6em #bdabab;
 }
