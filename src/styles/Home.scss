@@ -1,12 +1,11 @@
 // shape colors
 
-$teal: rgba(90, 250, 199, 90);
-$sage: rgba(167, 172, 112, 90);
-$mustard: rgba(226, 180, 86, 90);
-$coral: rgba(255, 202, 202, 90);
-$purple: rgba(92, 53, 109, 90);
-$burgundy: rgba(175, 67, 67, 90);
-$pink: $coral;
+$teal: rgba(90, 250, 199, .70);
+$sage: rgba(167, 172, 112, .90);
+$mustard: rgba(226, 180, 86, .90);
+$coral: rgba(255, 202, 202, .70);
+$purple: rgba(92, 53, 109, .90);
+$burgundy: rgba(175, 67, 67, .90);
 
 // container gradient bg
 
@@ -20,23 +19,57 @@ $lightyellow: rgba(232,227,228,100);
 }
 
 // text
+
 h1 {
-  font-size: 2em;
-  text-align: center;
+  font-family: 'Eczar', serif;
+  font-size: 4vh;
+  font-weight: lighter;
+  color: #008B95;
+  margin: -3%;
+}
+h3, p {
+  font-family: 'Eczar', serif;
+  font-size: 1em;
+  font-weight: lighter;
 }
 
 // shapes
+.header {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  left: 50%;
+  top: 500px;
+}
 .rectangle__teal {
-  background: $teal;
-  width: 200px;
-  height: 400px;
-  margin-left: 30%;
-  box-shadow: -0.3em 0 0.6em #bdabab;
+  display: inline-block;
+  position: relative;
+  background-color: $teal;
+  width: 20%;
+  height: 450px;
+  right: 10%;
+  box-shadow: -5px 4px 10px 1px rgb(121,121,121);
 }
 .rectangle__pink {
-  background: $pink;
-  width: 400px;
-  height: 200px;
-  margin-left: 30%;
-  box-shadow: -0.3em 0 0.6em #bdabab;
+  display: inline-block;
+  position: relative;
+  background-color: $coral;
+  width: 20%;
+  height: 450px;
+  margin-top: 200px;
+  box-shadow: -5px 4px 10px 1px rgb(121,121,121);
+}
+.circle {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: $sage;
+  box-shadow: -5px 4px 10px 1px rgb(121,121,121);
+  height: 100px;
+  width: 100px;
+}
+.wave {
+  position: fixed;
+  height: 40%;
+  top: 200px;
 }
