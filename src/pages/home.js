@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Page from '../components/Page';
-import wave from '../assets/img/wave.png';
 // import styled, { keyframes } from 'styled-components';
 //
-// // const coolBoxKeyframes = keyframes`
+// // const test-keyframes = keyframes`
 // //   0% {
 // //     height: 0px;
 // //     background: green;
@@ -19,7 +18,7 @@ import wave from '../assets/img/wave.png';
 // //   background: green;
 // //   width: 100px;
 // //   position: relative;
-// //   animation-name: ${coolBoxKeyframes};
+// //   animation-name: ${test-keyframes};
 // //   animation-duration: 2s;
 // //   animation-timing-function: ease;
 // //   animation-delay: 0s;
@@ -37,6 +36,8 @@ export default class Home extends Component {
           <h1>eden syoum</h1>
           <h3>web development + design</h3>
         </div>
+
+          <div className="triangle-yellow"></div>
 
           <img className="wave" src={require('../assets/img/wave.png')} />
 

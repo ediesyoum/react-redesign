@@ -6,6 +6,7 @@ $mustard: rgba(226, 180, 86, .90);
 $coral: rgba(255, 202, 202, .70);
 $purple: rgba(92, 53, 109, .90);
 $burgundy: rgba(175, 67, 67, .90);
+$yellow: rgba(249,243,192,100);
 
 // container gradient bg
 
@@ -22,10 +23,10 @@ $lightyellow: rgba(232,227,228,100);
 
 h1 {
   font-family: 'Eczar', serif;
-  font-size: 4vh;
+  font-size: 4em;
   font-weight: lighter;
   color: #008B95;
-  margin: -3%;
+  margin: -16%;
 }
 h3, p {
   font-family: 'Eczar', serif;
@@ -36,40 +37,54 @@ h3, p {
 // shapes
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: 300px;
-  left: 50%;
-  top: 500px;
+  left: 35%;
+  top: 525px;
 }
 .rectangle__teal {
   display: inline-block;
   position: relative;
   background-color: $teal;
-  width: 20%;
+  width: 9%;
   height: 450px;
-  right: 10%;
-  box-shadow: -5px 4px 10px 1px rgb(121,121,121);
+  right: 28%;
+  box-shadow: -5px 5px 4px -3px rgb(121,121,121);
 }
 .rectangle__pink {
   display: inline-block;
   position: relative;
   background-color: $coral;
-  width: 20%;
-  height: 450px;
+  width: 13%;
+  right: 19%;
+  height: 400px;
   margin-top: 200px;
-  box-shadow: -5px 4px 10px 1px rgb(121,121,121);
+  box-shadow: -5px 5px 4px -3px rgb(121,121,121);
 }
 .circle {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
   background-color: $sage;
-  box-shadow: -5px 4px 10px 1px rgb(121,121,121);
+  box-shadow: -5px 5px 4px -3px rgb(121,121,121);
   height: 100px;
   width: 100px;
 }
 .wave {
-  position: fixed;
+  position: absolute;
   height: 40%;
   top: 200px;
+  left: 21%;
+}
+.triangle-yellow {
+  width: 0;
+  height: 0;
+  top: 55%;
+  left: 30%;
+  position: absolute;
+  z-index: 1;
+  border-right: 125px solid transparent;
+  border-bottom: 153px solid $yellow;
+  border-left: 314px solid transparent;
+  box-shadow: 0px 4px 3px -2px rgb(121,121,121);
 }
