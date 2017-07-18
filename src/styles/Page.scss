@@ -1,16 +1,10 @@
+$lightpurple: rgba(194,191,232,100);
+$lightblue: rgba(210,227,249,100);
+$lightyellow: rgba(232,227,228,100);
+
+body {
+	background-image: linear-gradient(90deg, $lightpurple, $lightblue 50%, $lightyellow 80%);
+}
 .container {
 	padding: 4em;
-	background-color: papayawhip;
-}
-
-.title {
-  font-size: 1.5em;
-  text-align: center;
-  color: orange;
-  font-family: sans-serif;
-}
-.content {
-	font-family: sans-serif;
-	font-size: 1em;
-	text-align: center;
 }

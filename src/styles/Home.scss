@@ -6,27 +6,19 @@ $mustard: rgba(226, 180, 86, .90);
 $coral: rgba(255, 202, 202, .70);
 $purple: rgba(92, 53, 109, .90);
 $burgundy: rgba(175, 67, 67, .90);
-$yellow: rgba(249,243,192,100);
+$yellow: rgba(221,225,93,100);
+$turquoise: #008B95;
+$darkgray: rgb(121,121,121);
 
-// container gradient bg
 
-$lightpurple: rgba(194,191,232,100);
-$lightblue: rgba(210,227,249,100);
-$lightyellow: rgba(232,227,228,100);
-
-.container {
-  background-image: linear-gradient(90deg, $lightpurple, $lightblue 50%, $lightyellow 80%);
-  border-radius: 50px;
-}
 
 // text
 
 h1 {
   font-family: 'Eczar', serif;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: lighter;
-  color: #008B95;
-  margin: -16%;
+  color: $turquoise;
 }
 h3, p {
   font-family: 'Eczar', serif;
@@ -35,56 +27,65 @@ h3, p {
 }
 
 // shapes
+
 .header {
   position: relative;
   z-index: 2;
-  width: 300px;
-  left: 35%;
-  top: 525px;
+  max-width: 33%;
 }
 .rectangle__teal {
   display: inline-block;
   position: relative;
   background-color: $teal;
+  z-index: 1;
   width: 9%;
   height: 450px;
-  right: 28%;
-  box-shadow: -5px 5px 4px -3px rgb(121,121,121);
+  box-shadow: -5px 5px 4px -3px $darkgray;
 }
 .rectangle__pink {
   display: inline-block;
   position: relative;
   background-color: $coral;
   width: 13%;
-  right: 19%;
   height: 400px;
   margin-top: 200px;
-  box-shadow: -5px 5px 4px -3px rgb(121,121,121);
+  box-shadow: -5px 5px 4px -3px $darkgray;
 }
 .circle {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  background-color: $sage;
-  box-shadow: -5px 5px 4px -3px rgb(121,121,121);
-  height: 100px;
-  width: 100px;
+  background-color: $burgundy;
+  box-shadow: -5px 5px 4px -3px $darkgray;
+  height: 200px;
+  width: 200px;
+  left: 10%;
+  top: 500px;
 }
 .wave {
   position: absolute;
-  height: 40%;
   top: 200px;
-  left: 21%;
+  left: 34%;
+  height: 50%;
+  transform: rotate(20deg);
+}
+.triangle-wrapper {
+  max-width: 33%;
 }
 .triangle-yellow {
-  width: 0;
+  max-width: 33%;
   height: 0;
-  top: 55%;
-  left: 30%;
   position: absolute;
   z-index: 1;
-  border-right: 125px solid transparent;
-  border-bottom: 153px solid $yellow;
-  border-left: 314px solid transparent;
-  box-shadow: 0px 4px 3px -2px rgb(121,121,121);
+  border-right: 75px solid transparent;
+  border-bottom: 89px solid $yellow;
+  border-left: 78px solid transparent;
+  box-shadow: 0px 4px 3px -3px $darkgray;
+}
+.logo {
+  position: absolute;
+  z-index: 1;
+  max-width: 33%;
+  left: 8%;
+  top: 14px;
 }
