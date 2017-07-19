@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Page from '../components/Page';
 import Wave from '../assets/img/wave.svg';
-import logo from '../assets/img/logo.svg';
 // import styled, { keyframes } from 'styled-components';
 //
 // // const test-keyframes = keyframes`
@@ -34,14 +33,6 @@ export default class Home extends Component {
   render() {
     return (
       <Page title="Home">
-
-        <div className="header">
-          <img className="logo" src={logo} />
-        </div>
-
-        <div className="triangle-wrapper">
-          <div className="triangle-yellow"></div>
-        </div>
 
         <content>
           <img className="wave" src={Wave} />
