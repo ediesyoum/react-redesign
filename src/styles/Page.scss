@@ -13,6 +13,7 @@ body {
 .header {
   position: absolute;
   z-index: 2;
+	max-width: 30%;
 }
 .logo-wrapper {
   max-width: 33%;
@@ -30,11 +31,11 @@ body {
   position: absolute;
   z-index: 1;
   max-width: 33%;
-  left: 7%;
+	left: 1%;
   top: 10px;
 }
 .rotate {
-  animation: 1000s  infinite rotate;
-  transform-origin: 50% 100%;
+  animation: 1000ms infinite linear rotate;
+  transform-origin: 0;
   position: relative;
 }
