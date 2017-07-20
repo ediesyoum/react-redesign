@@ -7,11 +7,14 @@ export default class Page extends Component {
   render() {
     return (
 			<div className="container">
-				<div className="header rotate">
-					<div className="title">{this.props.title}</div>
+				<div className="title">{this.props.title}</div>
 
+				<div className="header">
           <img className="logo" src={logo} />
-          <img className="logo-wrapper" src={triangle} />
+
+          <div className="logo-wrapper">
+            <div className="logo-triangle"></div>
+          </div>
 				</div>
 
 				<div className="content">

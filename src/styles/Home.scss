@@ -30,7 +30,7 @@ h3, p {
 
 .rectangle__teal {
   display: inline-block;
-  position: relative;
+  position: absolute;
   background-color: $teal;
   z-index: 1;
   width: 9%;
@@ -39,11 +39,12 @@ h3, p {
 }
 .rectangle__pink {
   display: inline-block;
-  position: relative;
+  position: absolute;
   background-color: $coral;
-  width: 13%;
+  width: 18%;
   height: 400px;
-  margin-top: 200px;
+  right: 30%;
+  bottom: 18%;
   box-shadow: -5px 5px 4px -3px $darkgray;
 }
 .circle {

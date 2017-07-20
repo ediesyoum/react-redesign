@@ -11,31 +11,34 @@ body {
 
 // logo styling
 .header {
-  position: absolute;
+  position: relative;
   z-index: 2;
 	max-width: 30%;
 }
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .logo-wrapper {
-  max-width: 33%;
+  max-width: 9vh;
+	animation: 13s linear 65s infinite load;
 }
 .logo-triangle {
-  max-width: 33%;
+  max-width: 10vh;
   height: 0;
-  position: absolute;
-  border-right: 75px solid transparent;
-  border-bottom: 89px solid $yellow;
-  border-left: 78px solid transparent;
+  position: relative;
+  border-right: 50px solid transparent;
+  border-bottom: 83px solid $yellow;
+  border-left: 55px solid transparent;
   box-shadow: 0px 4px 3px -3px $darkgray;
 }
 .logo {
   position: absolute;
   z-index: 1;
-  max-width: 33%;
-	left: 1%;
-  top: 10px;
-}
-.rotate {
-  animation: 1000ms infinite linear rotate;
-  transform-origin: 0;
-  position: relative;
+  max-width: 10vh;
+	left: 2%;
 }
