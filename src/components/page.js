@@ -3,6 +3,17 @@ import logo from '../assets/img/logo.svg';
 import triangle from '../assets/img/logo-triangle.svg';
 import styled, { keyframes } from 'styled-components';
 
+
+// const rotation = keyframes`
+// 	from {
+// 			-webkit-transform: rotate(0deg);
+// 	}
+// 	to {
+// 			-webkit-transform: rotate(359deg);
+// 	}
+// `
+
+
 export default class Page extends Component {
   render() {
     return (
