@@ -13,6 +13,7 @@ body {
 .header {
   position: relative;
   z-index: 2;
+	max-width: 30%;
 }
 @keyframes load {
   0% {
@@ -38,17 +39,6 @@ body {
 .logo {
   position: absolute;
   z-index: 1;
-<<<<<<< HEAD
   max-width: 10vh;
 	left: 2%;
-=======
-  max-width: 33%;
-  left: 7%;
-  top: 10px;
-}
-.rotate {
-  animation: 1000s  infinite rotate;
-  transform-origin: 50% 100%;
-  position: relative;
->>>>>>> parent of be13729... Add work from end of day yesterday
 }

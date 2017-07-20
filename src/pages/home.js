@@ -7,7 +7,7 @@ export default class Home extends Component {
     return (
       <Page title="Home">
 
-        <img className="wave" src={Wave} />
+        <img className="wave" alt='Wave' src={Wave} />
 
         <div className="rectangle__teal"></div>
 
@@ -18,7 +18,7 @@ export default class Home extends Component {
         <div>
           <h3>web development + design</h3>
         </div>
-        
+
       </Page>
     );
   }
